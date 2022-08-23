@@ -63,6 +63,7 @@ html{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .text--purple{
@@ -91,6 +92,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
 }
 
 .nav__link--list{
@@ -148,6 +150,7 @@ nav {
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
+    margin: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -206,6 +209,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    
 }
 
 
@@ -219,7 +223,8 @@ nav {
 .language__list{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    margin: auto 0;  
 }
 .language__name{
     position: absolute;
@@ -307,6 +312,7 @@ z-index: 2;
     color: white;
 }
 
+
 /*footer*/
 .footer{
     background-color: #242424;
@@ -351,3 +357,40 @@ z-index: 2;
 .footer__social--link,.footer__copyright, .footer__logo--popper{
 color: white;
 }
+
+
+@media (max-width: 768px){
+    nav{
+        height: 68px;
+    }
+
+    h1{font-size: 24px;}
+
+    .about-me__info--para{
+        font-size: 18px;
+    }
+    .language{
+        width: calc(100%/3);
+
+    }
+    .project__description--para{
+        font-size: 14px;
+    }
+    .project__description{
+        padding-right: 15px;
+    }
+    .project__description--title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:480px){
+    .nav__link:not(:last-child){
+        display: none;
+        
+    }
+   .project__description--para{
+    display: none;
+   }
+
+    }
