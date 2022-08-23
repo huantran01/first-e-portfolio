@@ -382,15 +382,6 @@ color: white;
     .project__description--title{
         font-size: 30px;
     }
-}
-
-@media(max-width:480px){
     .nav__link:not(:last-child){
         display: none;
-        
-    }
-   .project__description--para{
-    display: none;
-   }
-
-    }
+}
